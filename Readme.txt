@@ -1,0 +1,1 @@
+http://johnelder.com/code/git.php
