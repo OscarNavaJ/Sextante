@@ -13,7 +13,7 @@ from sympy.interactive import printing
 sp.init_printing(use_latex=True) # doctest: +SKIP
 
 from IPython.display import HTML
-from iapws import IAPWS97
+#from iapws import IAPWS97
 
 def Presion_Vapor(Sustancia,T):
     """
@@ -37,7 +37,7 @@ def Presion_Vapor(Sustancia,T):
 def Funcion_Caracteristica_Burbuja (T,Sustancias,Composiciones,PresionSistema):
     
     zA,zB,zC,zD,zE,zF= Composiciones
-    S1,S2,S3,S4,S5=Sustancias
+    S1,S2,S3,S4,S5,S6=Sustancias
     P1=zA*Presion_Vapor(S1,T)
     P2=zB*Presion_Vapor(S2,T)
     P3=zC*Presion_Vapor(S3,T)
